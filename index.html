@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <script type="module" src="./todo-item/todo-item.component.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">TO DO</h1>
+      <div class="divider"></div>
+      <div class="filters">
+        <label for="filter-title" class="filter">Filter by Title: <input type="text" class="input" id="filter-title" />
+        </label>
+        <label for="filter-due-date" class="filter">Filter by Due Date: <input type="date" class="input" id="filter-due-date" />
+        </label>
+        <button class="button" id="clear-button">Clear</button>
+        <button class="button add" id="add-button">Add New</button>
+      </div>
+      <div class="divider"></div>
+      <div id="todo-list"></div>
+    </main>
+  </body>
+  <script type="module" src="./main.js"></script>
+</html>

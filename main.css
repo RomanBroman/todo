@@ -1,0 +1,87 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 24px;
+}
+.title {
+  padding: 10px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+  padding: 0;
+  margin: 0 0 24px;
+  letter-spacing: 2px;
+}
+.filters {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+label.filter {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+}
+.filter input {
+  height: 32px;
+  width: 200px;
+  padding: 0 8px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  transition: 175ms ease-in-out;
+}
+.filter input:focus {
+  outline: #333;
+  border-color: #333;
+}
+.divider {
+  border-bottom: 1px solid #d7d7d7;
+  margin: 12px 0;
+}
+.button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 32px;
+  padding: 0 8px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  color: #333;
+  border: 1px solid #b3b3b3;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 175ms ease-in-out;
+  background-color: #fff;
+}
+.button:hover {
+  border-color: #333;
+}
+.button.add {
+  margin-left: auto;
+}
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
